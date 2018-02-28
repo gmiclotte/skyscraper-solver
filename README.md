@@ -1,5 +1,7 @@
 # skyscraper-solver
-Brute force solver for skyscraper puzzles
+Brute force solver for skyscraper puzzles in python3.  
+Tested in python3.6.  
+The solver builds a list of possible rows for each row. It then tries every combination of these rows to check if it is a valid solution to the puzzle. For each attempt the attempt number and total number of possible solutions is printed.
 
 # how to
 there are two ways to run the solver:  
@@ -15,25 +17,25 @@ skyscraper.py <dimension> c<circular views>
 
 # examples
 ```
-./skyscraper.py 5 c12432441322122532321
+python3 skyscraper.py 5 c12432441322122532321
 (5, 4, 1, 3, 2)
 (4, 5, 3, 2, 1)
 (3, 2, 4, 1, 5)
 (2, 1, 5, 4, 3)
 (1, 3, 2, 5, 4)
-./skyscraper.py 5 l12323 r44132 t12432 b52212
+python3 skyscraper.py 5 l12323 r44132 t12432 b52212
 (5, 4, 1, 3, 2)
 (4, 5, 3, 2, 1)
 (3, 2, 4, 1, 5)
 (2, 1, 5, 4, 3)
 (1, 3, 2, 5, 4)
-./skyscraper.py 5 c0000300320000235020
+python3 skyscraper.py 5 c0000300320000235020
 (2, 4, 5, 3, 1)
 (5, 3, 1, 2, 4)
 (3, 5, 4, 1, 2)
 (4, 1, 2, 5, 3)
 (1, 2, 3, 4, 5)
-./skyscraper.py 5 l30205 r00320 t00003 b32000
+python3 skyscraper.py 5 l30205 r00320 t00003 b32000
 (2, 4, 5, 3, 1)
 (5, 3, 1, 2, 4)
 (3, 5, 4, 1, 2)
